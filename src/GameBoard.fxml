@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" gridLinesVisible="true"
+            fx:controller="GameBoardController"
+            prefHeight="800" prefWidth="800">
+
+    <!-- The Inner GridPane contains the play area. -->
+    <GridPane fx:id="playArea" gridLinesVisible="true" GridPane.columnIndex="1" GridPane.columnSpan="1"
+              GridPane.rowIndex="0" GridPane.rowSpan="4" style="-fx-background-color: darkgreen">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="9.09"/>
+            <ColumnConstraints percentWidth="9.09"/>
+            <ColumnConstraints percentWidth="9.09"/>
+            <ColumnConstraints percentWidth="9.09"/>
+            <ColumnConstraints percentWidth="9.09"/>
+            <ColumnConstraints percentWidth="9.09"/>
+            <ColumnConstraints percentWidth="9.09"/>
+            <ColumnConstraints percentWidth="9.09"/>
+            <ColumnConstraints percentWidth="9.09"/>
+            <ColumnConstraints percentWidth="9.09"/>
+            <ColumnConstraints percentWidth="9.09"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints percentHeight="6.67"/>
+            <RowConstraints percentHeight="6.67"/>
+            <RowConstraints percentHeight="6.67"/>
+            <RowConstraints percentHeight="6.67"/>
+            <RowConstraints percentHeight="6.67"/>
+            <RowConstraints percentHeight="6.67"/>
+            <RowConstraints percentHeight="6.67"/>
+            <RowConstraints percentHeight="6.67"/>
+            <RowConstraints percentHeight="6.67"/>
+            <RowConstraints percentHeight="6.67"/>
+            <RowConstraints percentHeight="6.67"/>
+            <RowConstraints percentHeight="6.67"/>
+            <RowConstraints percentHeight="6.67"/>
+            <RowConstraints percentHeight="6.67"/>
+            <RowConstraints percentHeight="6.67"/>
+        </rowConstraints>
+    </GridPane>
+
+    <!-- HBoxes are for displaying the players information -->
+    <HBox fx:id="player1" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="1"/>
+    <HBox fx:id="player2" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.columnSpan="1"/>
+    <HBox fx:id="player3" GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.columnSpan="1"/>
+    <HBox fx:id="player4" GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="1"/>
+
+    <columnConstraints>
+        <ColumnConstraints percentWidth="23.5"/>
+        <ColumnConstraints percentWidth="76.5"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="25"/>
+        <RowConstraints percentHeight="25"/>
+        <RowConstraints percentHeight="25"/>
+        <RowConstraints percentHeight="25"/>
+    </rowConstraints>
+</GridPane>

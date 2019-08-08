@@ -8,13 +8,14 @@ import javafx.stage.Stage;
 public class Main extends Application {
 	static Player[] players = new Player[4];
 	static Stage mainPane;
+	static Scene scene;
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		mainPane = primaryStage;
 		mainPane.setTitle("Bomberman");
 		Parent root = FXMLLoader.load(getClass().getResource("/MainMenu.fxml"));
-		Scene scene = new Scene(root);
+		scene = new Scene(root);
 		mainPane.setScene(scene);
 		mainPane.show();
 	}
